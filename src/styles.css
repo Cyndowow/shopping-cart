@@ -4,7 +4,12 @@
 
 body {
     margin: 0;
-    background-color: grey;
+    background-color: white;
+}
+
+.main {
+    margin: 0 auto;;
+    padding: 4rem;
 }
 
 header {
@@ -15,6 +20,9 @@ header {
     justify-content: space-between;
     background-color: var(--header-background);
     color: white;
+    height: 10vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
 }
 
 .nav {
@@ -31,11 +39,16 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;    
+    min-height: 90vh;    
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .home-img {
-    background-color: grey;
+    background-color: white;
     display: flex;
     && img {
         border-radius: 25px;
@@ -51,10 +64,68 @@ header {
     color: red;
 }
 
+.product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.img-container {
+    min-height: 25rem;
+    max-height: 25rem;
+    padding: 3rem;
+    margin: 0 auto;    
+
+
+    & img {
+    height: 100%;
+    width: 100%;
+    }
+}
+
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 100%;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+}
+
+.buy-Btn {
+    border-radius: 3px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.product-title {
+    font-weight: bold;
+}
 
 button {
     padding: 5px 20px;
     border-radius: 25px;
     border: none;
-    
+    cursor: pointer;
 }
