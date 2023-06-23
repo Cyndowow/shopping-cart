@@ -1,0 +1,60 @@
+:root {
+    --header-background: black;
+}
+
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+header {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-background);
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+
+}
+
+.home {
+    margin-top: -20px;
+    text-align: center;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;    
+}
+
+.home-img {
+    background-color: grey;
+    display: flex;
+    && img {
+        border-radius: 25px;
+    }
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    position: relative;
+    justify-content: center;
+    color: red;
+}
+
+
+button {
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: none;
+    
+}
