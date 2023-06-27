@@ -23,14 +23,14 @@ const CartItemCard = ({ id, title, price, image, quantity, changeQty, deleteCart
                 <img src={image} alt={title} />
             </div>
             <div className="cart-info-wrapper">
-                <div className="cart-title">{title}</div>
+                <div className="cart-card-title">{title}</div>
                 <div>${sumPrice()}</div>
                 <div className="amount-changer">
                     <Button className={"amount-plus"} onClick={incrementQuant} content="+"/>
                     <div>{cartItem.quantity}</div>
                     <Button className={"amount-minus"} onClick={decrementQuant} content="-"/>
                 </div>
-                <Button className={"cart-delete-item"} onClick={handleDelete} content="x" />
+                <Button className={"cart-delete-item"} onClick={handleDelete} content="Delete" />
             </div>
         </div>
     )
