@@ -38,9 +38,9 @@ const Main = () => {
         <div className="main">
             <Header cartItemsQty={cartItemQty} />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop addToCart={addCartItem}/>} />
-                <Route path="/cart" element={<Cart items={cartItems} deleteCartItem={deleteCartItem} changeQty={changeQty}/>} />
+                <Route path="#" element={<Home />} />
+                <Route path="#shop" element={<Shop addToCart={addCartItem}/>} />
+                <Route path="#cart" element={<Cart items={cartItems} deleteCartItem={deleteCartItem} changeQty={changeQty}/>} />
             </Routes>
 
         </div>        
