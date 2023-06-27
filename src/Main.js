@@ -15,7 +15,8 @@ const Main = () => {
         if(alreadyInCart) {
             changeQty(newItem.id, 1);
         } else {
-            setCartItems([...cartItems, newItem])
+            const addable = {...newItem, quantity: 1 }
+            setCartItems([...cartItems, addable])
         }
     }
 
