@@ -7,19 +7,6 @@ import Button from "../utils/Button";
 
 const Cart = ({ items, deleteCartItem, changeQty }) => {
     
-    const updateQuantity = async (productId, quantity) => {
-        const currentCart = cart;
-
-        if(currentCart.quantity === 0) {
-            setCart(currentCart.filter((item) => item.id) !== productId)
-        } else {
-            const product = currentCart.find((item) => item.id === productId);
-            product.quantity = quantity;
-            currentCart.map((item) => (item.id === productId ? product : null));
-            setCart(currentCart)
-        }
-    }
-    
     const sumTotal = items.map((item) => item.price * item.quantity).reduce((a, c) => a + c, 0).toFixed(2)
     
 
