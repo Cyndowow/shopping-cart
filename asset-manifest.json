@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cyndowow.github.io/shopping-cart/static/css/main.c9855708.css",
+    "main.js": "/cyndowow.github.io/shopping-cart/static/js/main.acb10c48.js",
+    "index.html": "/cyndowow.github.io/shopping-cart/index.html",
+    "main.c9855708.css.map": "/cyndowow.github.io/shopping-cart/static/css/main.c9855708.css.map",
+    "main.acb10c48.js.map": "/cyndowow.github.io/shopping-cart/static/js/main.acb10c48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9855708.css",
+    "static/js/main.acb10c48.js"
+  ]
+}
