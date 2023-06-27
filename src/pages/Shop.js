@@ -9,6 +9,7 @@ const Shop = ({ addToCart }) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
+        // eslint-disable-next-line
         loadProducts();
     },[])
     

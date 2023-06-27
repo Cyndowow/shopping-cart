@@ -4,7 +4,6 @@ import Button from "../utils/Button";
 
 const CartItemCard = ({ id, title, price, image, quantity, changeQty, deleteCartItem }) => {
     const cartItem = { id, title, price, image, quantity };
-    const product = { id, title, price, image };
 
     const handleDelete = () => deleteCartItem(id);
     
