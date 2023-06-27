@@ -3,13 +3,15 @@ import uniqid from "uniqid";
 import ShopCard from "../components/ShopCard"
 
 
-const Shop = () => {
+
+const Shop = ({ addToCart }) => {
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
         loadProducts();
     },[])
+    
 
     const loadProducts = async () => {
         setProducts(filterProducts(await fetchProducts()))
@@ -30,6 +32,10 @@ const Shop = () => {
           )
     }
 
+    const handleAdd = (product) => {
+        addToCart(product)
+    }
+
     const productCards = products.map((product) => (
         <ShopCard 
             key={uniqid()}
@@ -37,6 +43,8 @@ const Shop = () => {
             title={product.title}
             price={product.price}
             image={product.image}
+            product={product}
+            addToCart={handleAdd}
         />
     ));
 
