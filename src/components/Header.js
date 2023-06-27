@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 //TODO: functions, routing
 
-const Header = () => {
+const Header = ({ cartItemsQty }) => {
     return(
         <header>
             <Link to="/">
@@ -13,6 +13,7 @@ const Header = () => {
                 <Link to="/shop">Shop</Link>
                 <div className="button-container">
                     <Link to="/cart" className="cart-btn">Cart</Link>
+                    <span className="cart-num"> [{cartItemsQty}]</span>
                 </div>
             </nav>
         </header>
