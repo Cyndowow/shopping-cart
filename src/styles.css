@@ -47,8 +47,12 @@ a {
 .home-img {
     background-color: white;
     display: flex;
+    flex-direction: column;
     && img {
         border-radius: 25px;
+    }
+    & a {
+        color: black;
     }
 }
 
@@ -58,7 +62,16 @@ a {
     width: 20rem;
     position: relative;
     justify-content: center;
-    color: red;
+    color: black;
+
+
+    & button {
+        background-color: black;
+        color: white;
+        padding: 2rem 3rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
 
 .product-wrapper {
