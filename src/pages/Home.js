@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-//TODO: find usable picture without copyright
-
 const Home = () => {
     return(
         <div className="home">
